@@ -103,7 +103,6 @@ h1 {
 
 .aboutHT_IMG {
     padding: 2em;
-    background-color: aliceblue;
     flex-grow: 0.5;
     width: 50%;
     height: auto;
@@ -148,6 +147,9 @@ h1 {
     flex-grow: 0.5;
     width: 50%;
     padding: 3em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .discoCarousel {
@@ -159,9 +161,8 @@ h1 {
 }
 
 .c-item {
-    height: 550px;
+    height: auto;
     width: 100%;
-    width: auto;
 }
 
 .c-img {
@@ -195,7 +196,6 @@ h1 {
 
     .aboutHT_IMG {
         padding: 2em;
-        background-color: aliceblue;
         flex-grow: 1;
         width: 100%;
         height: auto;
@@ -204,6 +204,21 @@ h1 {
         .aboutHT_IMG > IMG {
             width: 85%;
         }
+
+    .discoContent{
+        display: block;
+        
+    }
+    .dText{
+        flex-grow: 1;
+        width: 100%;
+    }
+    .discoCarousel{
+        flex-grow: 1;
+        width: 85%;
+        flex-wrap: nowrap;    
+    }
+
 }
 .navbar-scroll {
     position: fixed;
