@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%=title%></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/merch.css">
+</head>
+<body>
+    <div class="container">
+        <div class="headContainer">
+            <div class="head">
+                <div class="socialM">
+                    <div class="socialL">
+                        <a href="https://horrorterrormx.bandcamp.com/?fbclid=IwAR3dM9zSow2kEj6oIeHoJC7DqHQGRa4rLga93QX8fg44ZoO9IBNBVyDq6K4" target="_blank">
+                            <img src="/img/bandcamp_logo.png" alt="" class="social">
+                        </a>
+                        <a href="https://www.facebook.com/horrorterrormx" target="_blank">
+                            <img src="/img/facebook_logo.png" alt="" class="social">
+                        </a>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="/">
+                        <img src="/img/HORROR TERROR (RED).png" class="LogoHT" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="Default.aspx">Horror Terror</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-3 mb-lg-0 ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Conoce a Horror Terror</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Discografía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/merch">Mercancía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Noticias</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <div class="M_products">
+            <div class="M_comingSoon">
+                <center>
+                    <img src="/img/26691_.png" alt="" class="CoSo_img">
+                </center>
+            </div>
+            <div class="M_CS_footer">
+            </div>
+            <br>
+            <div class="M_product">
+                    <div class="prdctIMG">
+                        <img src="https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-13.png" alt="" class="M_product_img">
+                        <h2>IMG #1</h2>
+                    </div>
+                    <div class="prdctIMG">
+                        <img src="https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-13.png" alt="" class="M_product_img">
+                        <h2>IMG #1</h2>
+                    </div>
+                    <div class="prdctIMG">
+                        <img src="https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-13.png" alt="" class="M_product_img">
+                        <h2>IMG #1</h2>
+                    </div>
+                    <div class="prdctIMG">
+                        <img src="https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-13.png" alt="" class="M_product_img">
+                        <h2>IMG #1</h2>
+                    </div>
+                    <div class="prdctIMG">
+                        <img src="https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-13.png" alt="" class="M_product_img">
+                        <h2>IMG #1</h2>
+                    </div>
+                    <div class="prdctIMG">
+                        <img src="https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-13.png" alt="" class="M_product_img">
+                        <h2>IMG #1</h2>
+                    </div>
+                    <div class="prdctIMG">
+                        <img src="https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-13.png" alt="" class="M_product_img">
+                        <h2>IMG #1</h2>
+                    </div>
+            </div>
+        </div>
+
+        <div class="popup-img">
+            <span>&times;</span>
+            <img src="https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-13.png" alt="">
+        </div>
+
+        <script>
+            document.querySelectorAll('.M_product img').forEach(image =>{
+                image.onclick = () =>{
+                    document.querySelector('.popup-img').style.display = 'block';
+                    document.querySelector('.popup-img img').src = image.getAttribute('src');
+                }
+            });
+
+            document.querySelector('.popup-img span').onclick = () =>{
+                document.querySelector('.popup-img').style.display = 'none';
+            }
+        </script>
+    </div>
+</body>
+</html>

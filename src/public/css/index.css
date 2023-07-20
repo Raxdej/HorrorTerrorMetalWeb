@@ -1,0 +1,197 @@
+body {
+    width: 100%;
+    background-image: url("/img/bg1.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    text-size-adjust: auto;
+}
+
+.Container {
+    width: 100%;
+}
+
+.headContainer {
+    width: 100%;
+    background: rgb(46,43,43);
+    background: linear-gradient(0deg, rgba(46,43,43,1) 0%, rgb(83, 80, 75) 100%);
+    float: left;
+}
+
+.head {
+    display: flex;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8
+}
+
+.socialM {
+    flex-grow: 0.33;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+.social {
+    height: 40px;
+    width: 40px;
+}
+
+.logo {
+    flex-grow: 0.33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogoHT {
+    width: 235px;
+    height: 150px;
+}
+
+
+.navbar {
+    background-color: burlywood;
+    width: 100%;
+    float: left;
+    height: auto;
+}
+
+.navi {
+    display: flex;
+}
+
+
+    .navi > li {
+        flex-grow: 0.25;
+    }
+
+.HTcontent {
+    width: 100%;
+    background-color: blueviolet;
+    float: left;
+}
+
+.aboutHT {
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: cadetblue;
+}
+
+.aboutContent {
+    display: flex;
+    height: auto;
+}
+
+.aboutHT_text {
+    background-color: aqua;
+    flex-grow: 0.5;
+    padding: 2em;
+}
+
+.aboutHT_IMG {
+    padding: 2em;
+    background-color: aliceblue;
+    flex-grow: 0.5;
+    width: 50%;
+    height: auto;
+}
+
+    .aboutHT_IMG > IMG {
+        max-width: 500px;
+        min-width: 100%;
+    }
+
+.aboutFooter {
+    background-color: black;
+    height: 25px;
+    color: aliceblue;
+}
+
+.discography {
+    width: 100%;
+    float: left;
+    background-color: beige;
+}
+
+.dicographyHeader {
+    background-color: rgb(91, 87, 87);
+    height: 25px;
+}
+
+.discoContent {
+    display: flex;
+    min-width: 100%;
+}
+
+.dText {
+    display: flex;
+    flex-grow: 0.5;
+    width: 50%;
+    padding: 3em;
+}
+
+.discoCarousel {
+    display: flex;
+    height: auto;
+    flex-grow: 0.5;
+    width: 50%;
+    margin-left: 12.5%;
+}
+
+.c-item {
+    height: 550px;
+    width: 100%;
+    width: auto;
+}
+
+.c-img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.merch {
+    width: 100%;
+    float: left;
+    background-color: chocolate;
+}
+
+.news {
+    width: 100%;
+    float: left;
+    background-color: gray;
+}
+
+@media (max-width: 1150px) {
+    .aboutContent {
+        display: block;
+    }
+
+    .aboutHT_text {
+        background-color: aqua;
+        flex-grow: 1;
+        padding: 2em;
+    }
+
+    .aboutHT_IMG {
+        padding: 2em;
+        background-color: aliceblue;
+        flex-grow: 1;
+        width: 100%;
+        height: auto;
+    }
+
+        .aboutHT_IMG > IMG {
+            width: 85%;
+        }
+}
+.navbar-scroll {
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+}
