@@ -1,10 +1,10 @@
 import sql from 'mssql';
 
 const DBSettings = {
-    user: 'sa',
-    password: 'PECF92426',
-    server: 'localhost',
-    database: 'Northwind',
+    user: 'MrVoid',
+    password: '192843_VastoLorde',
+    server: 'testvoid-server.database.windows.net',
+    database: 'HorrorTerrorDB',
     options: {
         encrypt: true,
         trustServerCertificate: true,

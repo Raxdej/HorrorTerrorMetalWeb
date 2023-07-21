@@ -5,18 +5,18 @@ import {dirname, join} from 'path';
 import { fileURLToPath } from 'url';
 
 // Aux & Temporal function here
-
-import { getConnection } from './database/connection.js';
 /*
+import { getConnection } from './database/connection.js';
+
 export const getProducts = async (req, res) => {
     const pool = await getConnection();
     // Temp line code
-    const result = await pool.request().query("SELECT * FROM 1");
+    const result = await pool.request().query("SELECT 1");
     console.log(result);
 };
-*/
 
-// getProducts();
+
+getProducts();*/
 
 // Rutas de navegación de la pág.
 import indexRoutes from './routes/index.js';

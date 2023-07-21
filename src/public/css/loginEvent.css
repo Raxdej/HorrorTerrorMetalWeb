@@ -1,0 +1,81 @@
+body {
+    background-color: #292929;
+  }
+
+.login-form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.login-form h1 {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+
+}
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-form .btn {
+  width: 100%;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form .btn:hover {
+  background-color: rgb(157, 17, 17);
+}
+
+.calendar{
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+    /* From https://css.glass */
+background: rgba(252, 239, 150, 0.05);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.2px);
+-webkit-backdrop-filter: blur(4.2px);
+    border-radius: 10px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.format {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 15px;
+    }
+    .nameE { grid-area: 1 / 1 / 2 / 3; }
+    .descE { grid-area: 2 / 1 / 4 / 6; }
+    .btnE { grid-area: 5 / 3 / 6 / 4; }
+    .dateE { grid-area: 4 / 1 / 5 / 3; }
+    .colorE { grid-area: 4 / 3 / 5 / 5; }
+
+    .btnE{
+        max-height: 64px;
+        max-width: 128px;
+    }
